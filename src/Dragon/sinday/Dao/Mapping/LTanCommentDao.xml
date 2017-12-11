@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 为这个mapper指定一个唯一的namespace，namespace的值习惯上设置成包名+sql映射文件名，这样就能够保证namespace的值是唯一的
+就是指定到需要映射到的借口的借口路径
+ -->
+ <mapper namespace="Dragon.sinday.Dao.LTanCommentDao">
+ 		 <select id="oneId"   resultType="Dragon.sinday.pojo.LTanComment" >
+ 		 	SELECT * FROM ltancomment where lTId=#{voids}
+ 		 </select>
+ 		 
+ 		
+ </mapper>
